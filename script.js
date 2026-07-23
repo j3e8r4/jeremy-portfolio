@@ -56,14 +56,18 @@ if (typingText) {
 const orbitBtn = document.getElementById("orbitBtn");
 
 if (orbitBtn) {
+
     orbitBtn.addEventListener("click", () => {
+
         document.body.classList.toggle("space-mode");
 
-        const isSpaceMode =
+        const enhanced =
             document.body.classList.contains("space-mode");
 
-        orbitBtn.textContent = isSpaceMode
-            ? "🌍 Return to Earth"
-            : "🚀 Enter Orbit";
+        orbitBtn.textContent = enhanced
+            ? "👎Back to Plain"
+            : "✨ Click to Enhance Styling";
+
     });
+
 }
