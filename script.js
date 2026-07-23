@@ -40,3 +40,21 @@ function typeEffect() {
 if (typingText) {
     typeEffect();
 }
+
+const orbitBtn = document.getElementById("orbitBtn");
+
+orbitBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("space-mode");
+
+    if(document.body.classList.contains("space-mode")){
+
+        orbitBtn.innerHTML = "🌍 Return to Earth";
+
+    }else{
+
+        orbitBtn.innerHTML = "🚀 Enter Orbit";
+
+    }
+
+});
